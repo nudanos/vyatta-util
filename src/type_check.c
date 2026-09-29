@@ -642,7 +642,7 @@ validate_portrange_negate (const char *str, const char **err_string)
 int
 validateType (const char *type, const char *str, int quiet)
 {
-  char *err_string = NULL;
+  const char *err_string = NULL;
 
   if (!str)
     return 0;
