@@ -1,10 +1,12 @@
 Source: vyatta-util
-Section: contrib/net
-Priority: extra
-Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
-Build-Depends: autoconf, automake, autotools-dev, libtool, debhelper (>= 9),
-	liburiparser-dev
-Standards-Version: 3.9.6
+Section: net
+Priority: optional
+Maintainer: NuDanOS Maintainers <jon@fernandez.tech>
+Build-Depends: debhelper-compat (= 13), liburiparser-dev
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/nudanos/vyatta-util.git
+Vcs-Browser: https://github.com/nudanos/vyatta-util
 
 Package: vyatta-util
 Architecture: any
@@ -20,8 +22,7 @@ Description: Vyatta utilities library
 
 Package: libvyatta-util-dev
 Architecture: any
-Priority: optional
-Section: contrib/libdevel
+Section: libdevel
 Depends: libvyatta-util1 (=${binary:Version}), ${misc:Depends}
 Description: libvyatta-util development package
  Development header and library files for the Vyatta utilities 

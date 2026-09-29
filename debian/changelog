@@ -1,3 +1,10 @@
+vyatta-util (0.30) trixie; urgency=medium
+
+  * Port to Debian 13: debhelper-compat 13 (drops autotools_dev addon),
+    Standards-Version 4.7.2, NuDanOS Vcs.
+
+ -- NuDanOS Maintainers <jon@fernandez.tech>  Tue, 29 Sep 2026 02:23:54 +0000
+
 vyatta-util (0.29) unstable; urgency=medium
 
   * DANOS Import Master

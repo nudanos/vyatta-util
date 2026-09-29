@@ -11,12 +11,10 @@ export DEB_LDFLAGS_MAINT_APPEND = -Wl,-z,defs
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_auto_configure:
-	# m4 directory is a Debian 7 workaround for aclocal only. Can be dropped in Debian 8.
-	mkdir -p m4
 	chmod +x debian/autogen.sh
 	debian/autogen.sh
 	dh_auto_configure -- --prefix=/opt/vyatta --libdir=/usr/lib --includedir=/usr/include
 
 %:
-	dh $@ --with autotools_dev
+	dh $@
 
