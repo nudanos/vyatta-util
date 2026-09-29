@@ -2,7 +2,11 @@ Source: vyatta-util
 Section: net
 Priority: optional
 Maintainer: NuDanOS Maintainers <jon@fernandez.tech>
-Build-Depends: debhelper-compat (= 13), liburiparser-dev
+Build-Depends: debhelper-compat (= 13),
+ autoconf,
+ automake,
+ libtool,
+ liburiparser-dev
 Standards-Version: 4.7.2
 Rules-Requires-Root: no
 Vcs-Git: https://github.com/nudanos/vyatta-util.git
